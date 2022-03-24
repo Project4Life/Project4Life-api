@@ -1,0 +1,21 @@
+
+
+GET https://localhost:7100/catalog
+
+###
+
+GET http://localhost:5042/catalog
+
+###
+
+POST https://localhost:7100/catalog
+Content-Type: application/json
+
+{
+    "name":"Shoes",
+    "description": "Ohio State shoes",
+    "brand":"Nike",
+    "price": 129.99
+}
+
+
