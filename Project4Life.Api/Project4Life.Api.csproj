@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Project4Life.Domain\Project4Life.Domain.csproj" />
+    <ProjectReference Include="..\Project4Life.Data\Project4Life.Data.csproj" />
   </ItemGroup>
 
 </Project>
