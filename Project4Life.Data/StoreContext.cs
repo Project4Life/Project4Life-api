@@ -10,5 +10,11 @@ namespace Project4Life.Data
         { }
 
         public DbSet<Item> Items { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+            DbInitializer.Initialize(builder);
+        }
     }
 }
