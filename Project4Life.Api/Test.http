@@ -12,10 +12,10 @@ POST https://localhost:7100/catalog
 Content-Type: application/json
 
 {
-    "name":"Shoes",
-    "description": "Ohio State shoes",
-    "brand":"Nike",
-    "price": 129.99
+    "name": "Shoes",
+    "description": "Running Shoes",
+    "brand": "Nike",
+    "price": 109.99
 }
 
 
