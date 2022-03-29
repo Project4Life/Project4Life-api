@@ -3,6 +3,9 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# exclude database files
+*.sqlite
+
 # User-specific files
 *.rsuser
 *.suo
@@ -453,5 +456,3 @@ $RECYCLE.BIN/
 !.vscode/launch.json
 !.vscode/extensions.json
 
-# exclude database files
-*.sqlite 
