@@ -1,0 +1,23 @@
+using system;
+using Project4Life.Domain.Tests;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+namespace Project4Life.Domain.Tests;
+
+[TestClass]
+public class ItemsTests
+{
+    [TestMethod]
+    public void Can_Create_New_Item()
+    {
+        // Arrange
+        var item = new Rating("Name", "Description", "Brand",10.00m);
+
+        // Act (empty)
+
+        // Assert
+        Assert.AreEqual("Name", item.Name);
+        Assert.AreEqual("Description", item.Description);
+        Assert.AreEqual("Brand", item.Brand);
+        Assert.AreEqual(10.00m, item.Brand);
+    }
