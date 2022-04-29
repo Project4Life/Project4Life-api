@@ -28,4 +28,4 @@ curl --request POST \
 
 curl --request DELETE \
     --url https://localhost:7250/catalog/3 \
-    --header 'authorization: Beaer {PUT_YOUR_TOKEN_HERE}'
+    --header 'authorization: Bearer {PUT_YOUR_TOKEN_HERE}'
