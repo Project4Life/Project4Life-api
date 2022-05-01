@@ -46,7 +46,8 @@ builder.Services.AddCors(options =>
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000", 
+            "https://brave-dune-0d7e7260f.1.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });
