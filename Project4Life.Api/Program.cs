@@ -2,7 +2,7 @@ using Project4Life.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Sqlite;
 using Project4Life.Api.Security;
-using Microsoft.AspNetCore.Authorization.JwtBearer;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -22,7 +22,7 @@ builder.Services.AddAuthentication(options =>
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
     })
-    .AddJetBearer(options =>
+    .AddJwtBearer(options =>
     {
         options.Authority = authority;
         options.Audience = audience;

@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Project4Life.Domain.Catalog;
 using Project4Life.Data;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Project4Life.Api.Controllers
 {
@@ -68,7 +68,7 @@ namespace Project4Life.Api.Controllers
             return NotFound();
         }
 
-        _db.Entry(item).State = EntityState.Modified;
+        _db.Entry(item).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
         _db.SaveChanges();
 
         return NoContent();
