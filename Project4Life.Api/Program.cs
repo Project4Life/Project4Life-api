@@ -13,6 +13,9 @@ string authority = builder.Configuration["Auth0:Authority"] ??
 string audience = builder.Configuration["Auth0:Audience"] ??
     throw new ArgumentNullException("Auth0:Audience");
 
+string storeConnectionString = builder.Configuration.GetConnectionString("StoreConnection") ??
+    throw new ArgumentNullException("ConnectionString:StoreConnection");
+
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -35,15 +38,16 @@ builder.Services.AddAuthorization(options =>
     });
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddDbContext<StoreContext> (options => 
-    options.UseSqlite("Data Source=../Registrar.sqlite",
+builder.Services.AddDbContext<StoreContext>(options => 
+    options.UseSqlServer(storeConnectionString,
     b => b.MigrationsAssembly("Project4Life.Api"))
 );
 builder.Services.AddCors(options => 
 {
     options.AddDefaultPolicy(builder =>
     {
-        builder.WithOrigins("http://localhost:3000")
+        builder.WithOrigins("http://localhost:3000", 
+            "https://brave-dune-0d7e7260f.1.azurestaticapps.net")
             .AllowAnyHeader()
             .AllowAnyMethod();
     });

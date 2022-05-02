@@ -1,4 +1,4 @@
- namespace Project4Life.Domain.Catalog;
+ namespace Project4Life.Domain.Catalog {
 
  public class Rating
     {
@@ -24,7 +24,8 @@
     this.Review = review;
 
 
-    }    
+    }   
+    } 
 }
 
 
