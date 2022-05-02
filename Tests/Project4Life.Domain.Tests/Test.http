@@ -25,8 +25,4 @@ curl --request POST \
   --url https://dev-mrtgnxu2.us.auth0.com/oauth/token \
   --header 'content-type: application/json' \
   --data '{"client_id":"GCwbwpBnkNlbcLTXnCGUwC0HkFmrFV4D","client_secret":"MgqKBOAYQ1MbLHT7HGeATUmG78GOxm4xULjRVU7l2HMI9Rg1x3rZIyJz2j5XJkQO","audience":"https://project-4-life","grant_type":"client_credentials"}'
-
-### Delete an Item to the Catalog Collection
-curl --request DELETE \
-    --url https://localhost:7250/catalog/3 \
-    --header 'authorization: Bearer {PUT_YOUR_TOKEN_HERE}'
+  
