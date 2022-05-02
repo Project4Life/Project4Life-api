@@ -11,7 +11,7 @@ public class ItemsTests
     public void Can_Create_New_Item()
     {
         // Arrange
-        var item = new Item("Name", "Description", "Brand",10.00m);
+        var item = new Item("Name", "Description", "Brand", 10.00m);
 
         // Act (empty)
 
@@ -19,7 +19,7 @@ public class ItemsTests
         Assert.AreEqual("Name", item.Name);
         Assert.AreEqual("Description", item.Description);
         Assert.AreEqual("Brand", item.Brand);
-        Assert.AreEqual(10.00m, item.Brand);
+        Assert.AreEqual(10.00m, item.Price);
     }
     [TestMethod]
     public void Can_Create_Add_Rating()
