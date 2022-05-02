@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4Life.Data", "Projec
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{BE1D8647-908D-47D6-8D97-5328A88A16BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4Life.Domain.Tests", "Tests\Project4Life.Domain.Tests\Project4Life.Domain.Tests.csproj", "{8FDE5644-35FA-4F58-BE1A-9F366327258E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Project4Life.Domain.Tests", "Tests\Project4Life.Domain.Tests\Project4Life.Domain.Tests.csproj", "{B397C28F-44F6-491B-ABD4-A02C811E7EBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
