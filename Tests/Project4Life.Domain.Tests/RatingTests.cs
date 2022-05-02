@@ -1,5 +1,5 @@
 using System;
-using Project4Life.Domain.Tests;
+using Project4Life.Domain.Catalog;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Project4Life.Domain.Tests;
@@ -18,7 +18,7 @@ public class RatingTests
         // Assert
         Assert.AreEqual(1, rating.Stars);
         Assert.AreEqual("Mike", rating.UserName);
-        Assert.AreEqual("Great fit!", rating.Reviews);
+        Assert.AreEqual("Great fit!", rating.Review);
     }
     [TestMethod]
     [ExpectedException(typeof(ArgumentException))]
@@ -27,7 +27,6 @@ public class RatingTests
         // Arrange
         var rating = new Rating(0, "Mike", "Great fit!");
 
-    }
-    
+    }    
 
 }
